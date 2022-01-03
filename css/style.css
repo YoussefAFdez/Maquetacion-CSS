@@ -5,13 +5,16 @@
     font-weight: bolder;
 }
 
-.contenido {
+.contenido, nav {
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
 }
 
 nav {
     background-color: var(--main-bg-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav li {
@@ -55,4 +58,123 @@ header img {
     color: white;
     display: inline-block;
     padding: 1em;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+h1 {
+    color: var(--main-bg-color);
+    font-size: 2em;
+    margin-block: 0.5em;
+    text-align: center;
+}
+
+.cards {
+    margin-block: 1.5em;
+}
+
+.cards::before {
+    background-color: var(--main-fg-color);
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    width: 33%;
+}
+
+.cards::after {
+    background-color: var(--main-fg-color);
+    content: "";
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    width: 33%;
+}
+
+.card {
+    color: var(--main-bg-color);
+    display: inline-block;
+    margin: 1em 0;
+    padding: 1em 2em;
+    text-align: center;
+    width: 33%;
+}
+
+.card img {
+    width: 60%;
+}
+
+.article {
+    color: var(--main-bg-color);
+    margin: 3em auto;
+    overflow: hidden;
+    width: 80%;
+}
+
+.article img {
+    float: left;
+    margin-left: 10%;
+}
+
+.article p {
+    float: left;
+    line-height: 1.6em;
+    margin-block: 1em;
+    text-align: justify;
+    width: 50%;
+}
+
+.article p::first-letter {
+    color: var(--main-fg-color);
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    font-size: 2em;
+    margin-right: 0.2em;
+    padding-right: 0.1em;
+}
+
+.gallery {
+    clear: both;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.gallery div {
+    display: inline-block;
+    width: 19%;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    color: var(--main-fg-color);
+    padding: 1.5em;
+    overflow-y: hidden;
+}
+
+footer ul {
+    float: left;
+    width: 20%;
+}
+
+footer p {
+    float: left;
+    text-align: center;
+    width: 60%;
+}
+
+.social {
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+
+.social img {
+    width: 10%;
 }
